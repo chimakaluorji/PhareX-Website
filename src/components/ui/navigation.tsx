@@ -54,7 +54,9 @@ export function Navigation({ onScrollToSection }: NavigationProps) {
             <button
               key={item.label}
               onClick={() => handleNavClick(item)}
-              className="text-white hover:text-primary transition-colors cursor-pointer"
+              className={`transition-colors cursor-pointer ${
+                isScrolled ? "text-primary hover:text-primary/80" : "text-white hover:text-primary"
+              }`}
             >
               {item.label}
             </button>
