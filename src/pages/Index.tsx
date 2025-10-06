@@ -192,7 +192,7 @@ const Index = () => {
               size="lg"
               variant="outline"
               onClick={() => scrollToSection("waitlist")}
-              className="border-white text-white hover:bg-white hover:text-primary font-semibold"
+              className="border-white text-primary bg-white hover:bg-white/90 font-semibold"
             >
               Join Waitlist
             </Button>
