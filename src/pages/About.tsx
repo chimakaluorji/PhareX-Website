@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Navigation } from "@/components/ui/navigation";
 import { Compass, Heart, Shield, Users, Target, TrendingUp } from "lucide-react";
+import salomeFounder from "@/assets/salome-founder.jpg";
 
 const About = () => {
   const values = [
@@ -172,6 +173,53 @@ const About = () => {
                   </CardContent>
                 </Card>
               ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Founder's Note */}
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary text-center mb-12">
+              A Message from Our Founder
+            </h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+              <div className="order-2 md:order-1">
+                <img 
+                  src={salomeFounder} 
+                  alt="Salome Madubuko, Founder & Director of PhareX"
+                  className="w-full h-auto rounded-lg shadow-card"
+                />
+              </div>
+              
+              <div className="order-1 md:order-2">
+                <h3 className="text-2xl font-bold text-primary mb-4">
+                  Salome Madubuko, Founder & Director
+                </h3>
+                
+                <div className="space-y-4 text-foreground leading-relaxed">
+                  <p>
+                    I came to the UK from Nigeria with my family as an immigrant and later experienced 
+                    first-hand the struggles of navigating life as a student. From understanding the 
+                    education system to finding housing, balancing work rules, and adapting to a new 
+                    culture, I know how overwhelming the journey can feel.
+                  </p>
+                  
+                  <p>
+                    PhareX was born from that experience, to be the support system I wished I had. 
+                    My goal is to provide international students with clear guidance, practical tools, 
+                    and a trusted community so they don't have to face the same challenges alone.
+                  </p>
+                  
+                  <p className="font-semibold text-primary">
+                    At PhareX, our mission is simple: to be a beacon of direction, clarity, and 
+                    support for every student who chooses to study in the UK.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
