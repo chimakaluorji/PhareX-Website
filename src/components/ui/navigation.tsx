@@ -54,7 +54,7 @@ export function Navigation({ onScrollToSection }: NavigationProps) {
             <button
               key={item.label}
               onClick={() => handleNavClick(item)}
-              className="text-foreground hover:text-primary transition-colors cursor-pointer"
+              className="text-white hover:text-primary transition-colors cursor-pointer"
             >
               {item.label}
             </button>
