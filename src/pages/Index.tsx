@@ -186,6 +186,7 @@ const Index = () => {
             <Button 
               size="lg"
               className="bg-gradient-accent hover:opacity-90 text-accent-foreground shadow-accent font-semibold"
+              onClick={() => window.open('https://calendly.com/pharex/15-minutes-discovery-call', '_blank')}
             >
               <Phone className="mr-2" size={20} />
               Book Free 15-min Call
@@ -322,6 +323,7 @@ const Index = () => {
               size="lg"
               variant="outline"
               className="border-primary text-primary hover:bg-primary hover:text-primary-foreground mb-8"
+              onClick={() => window.open('https://calendly.com/pharex/15-minutes-discovery-call', '_blank')}
             >
               <Phone className="mr-2" size={20} />
               Book 15-min Call
@@ -384,9 +386,32 @@ const Index = () => {
             <div>
               <h4 className="font-semibold mb-4">Follow Us</h4>
               <div className="flex gap-4">
-                <Instagram className="hover:text-accent cursor-pointer transition-colors" size={24} />
-                <Youtube className="hover:text-accent cursor-pointer transition-colors" size={24} />
-                <Linkedin className="hover:text-accent cursor-pointer transition-colors" size={24} />
+                <a 
+                  href="https://www.instagram.com/pharexstudents?igsh=Y283eTU0bmlveW0y&utm_source=qr" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                >
+                  <Instagram className="hover:text-accent cursor-pointer transition-colors" size={24} />
+                </a>
+                <a 
+                  href="https://www.tiktok.com/@pharexstudents?_t=ZN-8zy4e6xqzJu&_r=1" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  aria-label="TikTok"
+                >
+                  <svg className="hover:text-accent cursor-pointer transition-colors" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                  </svg>
+                </a>
+                <a 
+                  href="https://www.linkedin.com/company/pharexstudents/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                >
+                  <Linkedin className="hover:text-accent cursor-pointer transition-colors" size={24} />
+                </a>
               </div>
             </div>
           </div>
