@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import pharexLogo from "@/assets/pharex-logo.png";
 
 interface NavigationProps {
   onScrollToSection?: (sectionId: string) => void;
@@ -44,8 +45,8 @@ export function Navigation({ onScrollToSection }: NavigationProps) {
     >
       <nav className="container mx-auto px-4 h-20 flex items-center justify-between">
         {/* Logo */}
-        <a href="/" className="text-2xl font-bold text-primary">
-          PhareX
+        <a href="/" className="flex items-center">
+          <img src={pharexLogo} alt="PhareX" className="h-12 w-auto" />
         </a>
 
         {/* Desktop Navigation */}

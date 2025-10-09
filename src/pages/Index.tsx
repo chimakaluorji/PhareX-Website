@@ -26,6 +26,7 @@ import {
   Linkedin
 } from "lucide-react";
 import heroImage from "@/assets/hero-image.jpg";
+import pharexLogo from "@/assets/pharex-logo.png";
 
 const Index = () => {
   const servicesRef = useRef<HTMLElement>(null);
@@ -359,7 +360,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-2xl font-bold mb-4">PhareX</h3>
+              <img src={pharexLogo} alt="PhareX" className="h-16 w-auto mb-4" />
               <p className="text-primary-foreground/80">
                 Your beacon for orientation in the UK
               </p>
