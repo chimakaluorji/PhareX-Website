@@ -177,7 +177,7 @@ const Index = () => {
         
         <div className="relative z-10 container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 animate-fade-in">
-            Your Beacon for Orientation in the UK
+            Your Beacon for Integration in the UK
           </h1>
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto animate-fade-in">
             Helping international students make confident decisions before and after arrival.
@@ -213,7 +213,7 @@ const Index = () => {
                 </div>
               </div>
               <p className="text-white/90 text-lg leading-relaxed">
-                PhareX provides clear orientation support in housing, employment, budgeting, 
+                PhareX provides clear integration support in housing, employment, budgeting, 
                 healthcare, and more so you can start your UK journey with confidence.
               </p>
             </div>
@@ -226,7 +226,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Orientation Services
+              Integration Services
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Comprehensive support across every aspect of your UK student journey
@@ -362,7 +362,7 @@ const Index = () => {
             <div>
               <img src={pharexLogo} alt="PhareX" className="h-16 w-auto mb-4" />
               <p className="text-primary-foreground/80">
-                Your beacon for orientation in the UK
+                Your beacon for integration in the UK
               </p>
             </div>
 
