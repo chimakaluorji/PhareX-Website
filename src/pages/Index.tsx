@@ -5,6 +5,8 @@ import { Navigation } from "@/components/ui/navigation";
 import { ServiceCard } from "@/components/ui/service-card";
 import { PricingCard } from "@/components/ui/pricing-card";
 import { WaitlistForm } from "@/components/ui/waitlist-form";
+import { WhatsAppCommunityForm } from "@/components/ui/whatsapp-community-form";
+import { CollaborationForm } from "@/components/ui/collaboration-form";
 import { 
   FileText, 
   Home, 
@@ -292,48 +294,40 @@ const Index = () => {
 
       {/* Events & Community */}
       <section className="py-16">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">
-            Events & Community
-          </h2>
-          <p className="text-lg text-muted-foreground mb-8">
-            Join our Meet & Greets, practical workshops, and online community.
-          </p>
-          <Button 
-            size="lg"
-            className="bg-gradient-primary hover:opacity-90 shadow-button"
-          >
-            Join Telegram Community
-          </Button>
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">
+              Events & Community
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              Join our Meet & Greets, practical workshops, and verified student community.
+            </p>
+          </div>
+          <WhatsAppCommunityForm />
         </div>
       </section>
 
       {/* Partners Section */}
       <section className="py-16 bg-muted/30">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">
-            Partners & Collaborators
-          </h2>
-          <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
-            Are you a training provider, employer, housing service, or immigration adviser? 
-            Let's collaborate.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">
+              Partners & Collaborators
+            </h2>
+            <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
+              Are you a training provider, employer, housing service, or immigration adviser? 
+              Let's collaborate.
+            </p>
             <Button 
               size="lg"
               variant="outline"
-              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground mb-8"
             >
               <Phone className="mr-2" size={20} />
               Book 15-min Call
             </Button>
-            <Button 
-              size="lg"
-              className="bg-gradient-accent hover:opacity-90 text-accent-foreground shadow-accent"
-            >
-              Apply to Collaborate
-            </Button>
           </div>
+          <CollaborationForm />
         </div>
       </section>
 
